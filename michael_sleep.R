@@ -29,7 +29,6 @@ sleep.cor <- cor(sleep.numeric)
 
 pl1 <- ggplot(sleep,aes(Start,Sleep.quality)) + geom_point(aes(color=Sleep.time)) 
 pl1 <- pl1 + stat_smooth() + theme_classic() + scale_color_gradient(low='blue',high='green')
-pl1 <- pl1 + theme(legend.title = "Hours in Bed")
 print(pl1)
 
 
